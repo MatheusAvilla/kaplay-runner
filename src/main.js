@@ -91,13 +91,13 @@ k.scene("main", () => {
     k.scene("gameover", () => {
         k.add([
             k.text(`Game Over! =(\nYour Score: ${counter} seconds!`),
-            k.pos(580, 300),
+            k.pos( window.innerWidth / 3, window.innerHeight / 2),
             k.color(k.BLACK)
         ]);
 
         const tryAgainButton = k.add([
             k.text("Try Again!", { size: 32 }),
-            k.pos(k.width() / 2.5, k.height() / 1.5),
+            k.pos( window.innerWidth / 2.3, window.innerHeight / 1.5),
             k.area(),
             k.color(0, 0, 150)
         ]);
