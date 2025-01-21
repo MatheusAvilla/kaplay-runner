@@ -10,7 +10,7 @@ k.setBackground(k.CYAN);
 k.scene("main", () => {
     k.setGravity(2000)
 
-    k.loadSprite("basketball", "/assets/simples-ball.png", {
+    k.loadSprite("basketball", "kaplay-runner/assets/simples-ball.png", {
         sliceX: 5,
         anims: {
             idle: { from: 0, to: 4, speed: 10, loop: true }
