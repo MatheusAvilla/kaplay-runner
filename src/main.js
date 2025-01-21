@@ -26,7 +26,7 @@ k.scene("main", () => {
 
     k.add([
         k.rect(k.width(), 300),
-        k.pos(0, window.innerHeight / 1.3),
+        k.pos(0, window.innerHeight / 1.18),
         k.color(k.GREEN),
         k.area(),
         k.outline(3),
@@ -49,6 +49,12 @@ k.scene("main", () => {
             player.jump();
         }
     });
+
+    onClick(() => {
+        if (player.isGrounded()) {
+            player.jump();
+        }
+    })
     
     player.onExitScreen(() => {
         k.go("gameover");
