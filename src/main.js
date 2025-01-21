@@ -1,9 +1,16 @@
 import kaplay from 'https://cdn.jsdelivr.net/npm/kaplay@3001.0.9/+esm'
 
 const k = kaplay({
-    width: 1600,
-    height: 800
+    width: window.innerWidth,
+    height:  window.innerHeight
 });
+
+window.addEventListener("resize", () => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+  
+    k.resize(width, height);
+  });
 
 k.setBackground(k.CYAN);
 
@@ -66,7 +73,7 @@ k.scene("main", () => {
        
         k.add([
             k.rect(50, 50),
-            k.pos(1500, 500),
+            k.pos(window.innerWidth-80, 500),
             k.area(),
             k.body(),
             k.outline(3),
@@ -84,7 +91,7 @@ k.scene("main", () => {
 
         const tryAgainButton = k.add([
             k.text("Try Again!", { size: 32 }),
-            k.pos(k.width() / 2.5, k.height() / 2),
+            k.pos(k.width() / 2.5, k.height() / 1.5),
             k.area(),
             k.color(0, 0, 150)
         ]);
