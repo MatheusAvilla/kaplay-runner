@@ -1,4 +1,4 @@
-import kaplay from "kaplay";
+import kaplay from 'https://cdn.jsdelivr.net/npm/kaplay@3001.0.9/+esm'
 
 const k = kaplay({
     width: 1600,

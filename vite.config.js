@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: "/kaplay-runner/"
+  base: "/kaplay-runner/",
 });
