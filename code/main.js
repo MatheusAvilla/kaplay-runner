@@ -1,4 +1,4 @@
-import kaplay from "kaplay";
+import kaplay from "../node_modules/kaplay";
 
 const k = kaplay({
     width: 1600,
