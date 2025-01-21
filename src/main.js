@@ -26,7 +26,7 @@ k.scene("main", () => {
 
     k.add([
         k.rect(k.width(), 300),
-        k.pos(0, 500),
+        k.pos(0, window.innerHeight / 1.3),
         k.color(k.GREEN),
         k.area(),
         k.outline(3),
@@ -73,7 +73,7 @@ k.scene("main", () => {
        
         k.add([
             k.rect(50, 50),
-            k.pos(window.innerWidth-80, 500),
+            k.pos(window.innerWidth-80, innerHeight / 1.3),
             k.area(),
             k.body(),
             k.outline(3),
